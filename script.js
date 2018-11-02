@@ -30,14 +30,22 @@ ctx.fill();
 
 //eye, left
 ctx.beginPath();
-circle(250-95, 250-60, 35);
+circle(250 -95, 250 -60, 35);
 ctx.fillStyle = "#664d23"; //brown
 ctx.fill();
 
 //eye, right
 ctx.beginPath();
-circle(250+95, 250-60, 35);
+circle(250 +95, 250 -60, 35);
 ctx.fillStyle = "#664d23";
 ctx.fill();
 
 // mouth, goddamnit
+//CanvasRenderingContext2D.arcTo(): adds a circular arc to the current path. It is commonly used for making rounded corners.
+//ctx.arcTo(x1, y1, x2, y2, radius); ()
+//ctx.arc(x,y,radius,strtAngle,endAngle,(antiClockwise))
+ctx.beginPath();
+ctx.moveTo(150, 20);
+ctx.arcTo(150,100, 50,20, 30);
+ctx.lineTo(50, 20);
+ctx.stroke();
