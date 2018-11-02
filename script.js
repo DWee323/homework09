@@ -1,5 +1,3 @@
-//https://github.com/karbassi/idx-528/tree/master/week-09/assignment
-
 /*
 The following tasks do not need to be done in order. I will review the final file.
 
@@ -27,7 +25,19 @@ const circle = (x,y,radius) => {
 //face outline
 ctx.beginPath();
 circle(250, 250, 230);
-ctx.fillStyle = "#ffde67";
+ctx.fillStyle = "#ffde67"; //off mustard
 ctx.fill();
 
-//eyes
+//eye, left
+ctx.beginPath();
+circle(250-95, 250-60, 35);
+ctx.fillStyle = "#664d23"; //brown
+ctx.fill();
+
+//eye, right
+ctx.beginPath();
+circle(250+95, 250-60, 35);
+ctx.fillStyle = "#664d23";
+ctx.fill();
+
+// mouth, goddamnit
